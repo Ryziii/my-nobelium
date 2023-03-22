@@ -1,10 +1,10 @@
 const BLOG = {
-  title: 'Rysi\'s Blog',
+  title: '𝗥𝘆𝘀𝗶’𝘀 𝗕𝗹𝗼𝗴',
   author: 'Rysi',
   email: '',
   link: 'https://b.rysiw.cc',
   description: '𝗡𝗢 𝗥𝗘𝗖𝗢𝗥𝗗, 𝗡𝗢 𝗢𝗖𝗖𝗨𝗥𝗥𝗘𝗡𝗖𝗘.',
-  lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
+  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
@@ -12,7 +12,7 @@ const BLOG = {
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
   since: 2018, // If leave this empty, current year will be used.
   postsPerPage: 7,
-  sortByDate: false,
+  sortByDate: true,
   showAbout: false,
   showArchive: false,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar

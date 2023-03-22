@@ -6,7 +6,7 @@ import { useLocale } from '@/lib/locale'
 const NavBar = () => {
   const locale = useLocale()
   const links = [
-    { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: true },
+    { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: false },
     { id: 1, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
     { id: 2, name: locale.NAV.RSS, to: '/feed', show: true },
     { id: 3, name: locale.NAV.SEARCH, to: '/search', show: true }
@@ -90,22 +90,10 @@ const Header = ({ navBarTitle, fullWidth }) => {
                 <rect
                   width="24"
                   height="24"
-                  className="fill-current text-black dark:text-white"
+                  // className="fill-current text-black dark:text-white"
                 />
                 <rect width="24" height="24" fill="url(#paint0_radial)" />
-                <defs>
-                  <radialGradient
-                    id="paint0_radial"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="rotate(45) scale(39.598)"
-                  >
-                    <stop stopColor="#CFCFCF" stopOpacity="0.6" />
-                    <stop offset="1" stopColor="#E9E9E9" stopOpacity="0" />
-                  </radialGradient>
-                </defs>
+                <image href="/favicon.svg" width="24" height="24" />
               </svg>
             </div>
           </Link>
